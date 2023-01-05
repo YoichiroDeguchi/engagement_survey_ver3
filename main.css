@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+/* ---------------------------------------------------
+    base
+---------------------------------------------------*/
+body {
+    width: 960px;
+    margin: auto;
+    background: #f7f7f7;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------
+    ボタン
+---------------------------------------------------*/
+/* 回答者用ページ_TOPページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.to_employee,
+a.to_employee,
+button.to_employee {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.to_employee2,
+a.to_employee2 {
+    color: #fff;
+    background-color: #eb6100;
+    margin: 0 10px;
+}
+
+.to_employee2:hover,
+a.to_employee2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* 管理者用ページ_TOPページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.to_admin,
+a.to_admin,
+button.to_admin {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.to_admin2,
+a.to_admin2 {
+    color: #fff;
+    background-color: #eb6100;
+    margin: 0 10px;
+}
+
+.to_admin2:hover,
+a.to_admin2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* スタート_回答者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.start_btn,
+a.start_btn,
+button.start_btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.start_btn2,
+a.start_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.start_btn2:hover,
+a.start_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* 回答を始める_回答者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.explanation_btn,
+a.explanation_btn,
+button.explanation_btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.explanation_btn2,
+a.explanation_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.explanation_btn2:hover,
+a.explanation_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* 進む_回答者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.attribute_btn,
+a.attribute_btn,
+button.attribute_btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.attribute_btn2,
+a.attribute_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.attribute_btn2:hover,
+a.attribute_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* 回答を送信_回答者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.question_btn,
+a.question_btn,
+button.question_btn {
+    width: 575px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.question_btn2,
+a.question_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.question_btn2:hover,
+a.question_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* TOPへ戻る_回答者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.answer_top_btn,
+a.answer_top_btn,
+button.answer_top_btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.answer_top_btn2,
+a.answer_top_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.answer_top_btn2:hover,
+a.answer_top_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* 回答結果を確認する_管理者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.result_page_btn,
+a.result_page_btn,
+button.result_page_btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+.result_page_btn2,
+a.result_page_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.result_page_btn2:hover,
+a.result_page_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+/* TOPへ戻る_管理者用ページ */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.result_top_btn,
+a.result_top_btn,
+button.result_top_btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    margin: 50px 358px;
+}
+
+.result_top_btn2,
+a.result_top_btn2 {
+    color: #fff;
+    background-color: #eb6100;
+}
+
+.result_top_btn2:hover,
+a.result_top_btn2:hover {
+    color: #fff;
+    background: #f56500;
+}
+
+
+
+/* ---------------------------------------------------
+    回答者用
+---------------------------------------------------*/
+.explanation_title,
+.attribute_title,
+.question_title {
+    margin: 0px 0 50px 0;
+}
+
+/* -----------------
+    回答説明ページ
+-----------------*/
+
+#explanationBox {
+    width: 640px;
+    margin: 30px 150px;
+    padding: 0.5em 1em;
+    background: #FFF;
+    box-shadow: 2px 2px 6px grey;
+}
+
+#attributeBox {
+    width: 510px;
+    margin: 30px 210px;
+    padding: 0.5em 1em;
+    background: #FFF;
+    box-shadow: 2px 2px 6px grey;
+}
+
+#questionBox {
+    width: 710px;
+    margin: 30px 110px;
+    padding: 0.5em 1em;
+    background: #FFF;
+    box-shadow: 2px 2px 6px grey;
+}
+
+#questionEndBox {
+    width: 610px;
+    margin: 30px 165px;
+    padding: 0.5em 1em;
+    background: #FFF;
+    box-shadow: 2px 2px 6px grey;
+}
+
+#attributeBox p,
+#questionBox p {
+    margin: 20px 0 0 0;
+}
+
+.explanation_btn,
+.attribute_btn,
+.question_btn,
+.answer_top_btn {
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ---------------------------------------------------
+    管理者用
+---------------------------------------------------*/
+.score_wrapper,
+.score_transition_wrapper,
+.genre_wrapper,
+.strength_weakness_wrapper,
+.gender_female_box,
+.gender_male_box,
+.age_20_box,
+.age_30_box,
+.age_40_box,
+.age_50_box,
+.affiliation_matoba_box,
+.affiliation_jiromaru_box,
+.occupation_nurse_box,
+.occupation_therapist_box,
+.occupation_clerk_box,
+.length_1_box,
+.length_12_box,
+.length_23_box,
+.length_3_box,
+.comparison_wrapper {
+    width: 700px;
+    margin: 30px 0px;
+    padding: 0.5em 1em;
+    background: #FFF;
+    box-shadow: 2px 2px 6px grey;
+}
+
+.admin_wrapper {
+    margin: 100px 113px;
+}
+
+/* ------------------------------------ */
+#copy-page {
+    display: inline-block;
+    width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    outline: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#copy-page:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.copy_btn_box {
+    text-align: center;
+    margin: 60px 0 0 0;
+}
