@@ -32,7 +32,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -278,7 +278,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
 
     </div>
-    <a href="top.php" class="result_top_btn result_top_btn2">TOPへ戻る</a>
+    <div class="admin_btn_wrapper">
+        <a href="admin.php" class="result_top_btn result_top_btn2">管理画面へ</a>
+        <a href="top.php" class="result_top_btn result_top_btn2">TOPへ戻る</a>
+    </div>
 
 
 
