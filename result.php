@@ -1,4 +1,8 @@
 <?php
+session_start();
+include('functions.php');
+check_session_id();
+
 // DB接続
 $dbn ='mysql:dbname=engagement_survey;charset=utf8mb4;port=3306;host=localhost';
 $user = 'root';
@@ -279,8 +283,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
     <div class="admin_btn_wrapper">
-        <a href="admin.php" class="result_top_btn result_top_btn2">管理画面へ</a>
+        <!-- <a href="admin.php" class="result_top_btn result_top_btn2">管理画面へ</a> -->
         <a href="top.php" class="result_top_btn result_top_btn2">TOPへ戻る</a>
+        <a href="logout.php">ログアウト</a>
     </div>
 
 

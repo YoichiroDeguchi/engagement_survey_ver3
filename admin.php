@@ -1,56 +1,56 @@
 <?php
-// DB接続
-$dbn ='mysql:dbname=engagement_survey;charset=utf8mb4;port=3306;host=localhost';
-$user = 'root';
-$pwd = '';
+// // DB接続
+// $dbn ='mysql:dbname=engagement_survey;charset=utf8mb4;port=3306;host=localhost';
+// $user = 'root';
+// $pwd = '';
 
-try {
-  $pdo = new PDO($dbn, $user, $pwd);
-} catch (PDOException $e) {
-  echo json_encode(["db error" => "{$e->getMessage()}"]);
-  exit();
-}
+// try {
+//   $pdo = new PDO($dbn, $user, $pwd);
+// } catch (PDOException $e) {
+//   echo json_encode(["db error" => "{$e->getMessage()}"]);
+//   exit();
+// }
 
-// SQL実行
-$sql = 'SELECT * FROM answer_table';
-$stmt = $pdo->prepare($sql);
+// // SQL実行
+// $sql = 'SELECT * FROM answer_table';
+// $stmt = $pdo->prepare($sql);
 
-try {
-  $status = $stmt->execute();
-} catch (PDOException $e) {
-  echo json_encode(["sql error" => "{$e->getMessage()}"]);
-  exit();
-}
+// try {
+//   $status = $stmt->execute();
+// } catch (PDOException $e) {
+//   echo json_encode(["sql error" => "{$e->getMessage()}"]);
+//   exit();
+// }
 
-// SQL実行の処理
-$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$output = "";
-foreach ($result as $record) {
-  $output .= "
-    <tr>
-      <td>{$record["year"]}</td>
-      <td>{$record["gender"]}</td>
-      <td>{$record["age"]}</td>
-      <td>{$record["affiliation"]}</td>
-      <td>{$record["occupation"]}</td>
-      <td>{$record["length"]}</td>
-      <td>{$record["q1"]}</td>
-      <td>{$record["q2"]}</td>
-      <td>{$record["q3"]}</td>
-      <td>{$record["q4"]}</td>
-      <td>{$record["q5"]}</td>
-      <td>{$record["q6"]}</td>
-      <td>{$record["q7"]}</td>
-      <td>
-        <a href='delete.php?id={$record["id"]}'>delete</a>
-      </td>
-    </tr>
-  ";
-}
+// // SQL実行の処理
+// $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+// $output = "";
+// foreach ($result as $record) {
+//   $output .= "
+//     <tr>
+//       <td>{$record["year"]}</td>
+//       <td>{$record["gender"]}</td>
+//       <td>{$record["age"]}</td>
+//       <td>{$record["affiliation"]}</td>
+//       <td>{$record["occupation"]}</td>
+//       <td>{$record["length"]}</td>
+//       <td>{$record["q1"]}</td>
+//       <td>{$record["q2"]}</td>
+//       <td>{$record["q3"]}</td>
+//       <td>{$record["q4"]}</td>
+//       <td>{$record["q5"]}</td>
+//       <td>{$record["q6"]}</td>
+//       <td>{$record["q7"]}</td>
+//       <td>
+//         <a href='delete.php?id={$record["id"]}'>delete</a>
+//       </td>
+//     </tr>
+//   ";
+// }
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -81,7 +81,7 @@ foreach ($result as $record) {
         </tr>
       </thead>
       <tbody>
-        <?= $output ?>
+        <?= //$output ?>
       </tbody>
     </table>
   </fieldset>
@@ -92,4 +92,4 @@ foreach ($result as $record) {
 
 
 </body>
-</html>
+</html> -->
