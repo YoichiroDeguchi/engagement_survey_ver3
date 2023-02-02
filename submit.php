@@ -91,7 +91,6 @@ try {
         <a href="top.php" class="answer_top_btn answer_top_btn2">TOPへ戻る</a>
     </div>
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 

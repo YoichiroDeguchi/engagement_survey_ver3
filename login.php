@@ -24,7 +24,6 @@
       <a href="register.php">新規登録する</a>
     </fieldset>
   </form>
-
 </body>
 
 </html>

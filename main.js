@@ -8,6 +8,7 @@ $(function () {
 });
 
 
+
 // 質問ページのURLコピー
 document.getElementById("copy-page").onclick = function () {
     $(document.body).append("<textarea id=\"copyTarget\" style=\"position:absolute; left:-9999px; top:0px;\" readonly=\"readonly\">" + location.href + "</textarea>");
